@@ -26,8 +26,11 @@ Responsive kit is a flutter library which simplifies creating responsive UI in F
 
 ### initialze in init
 Initialize SizeConfig in init of main.dart. The parameters needed are: 
-| parameter            | description|
+| parameter            | description                     |
 |-----------------------------------|--------------------------------------|
+|context|BuildContext in init of main.dart|
+|height|`height` is the height of the frame in Figma|
+|width|`width` is the width of the frame in Figma|
 
 
 ## Features
