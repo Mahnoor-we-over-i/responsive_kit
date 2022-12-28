@@ -18,27 +18,38 @@ know whether this package might be useful for them. -->
 Responsive kit is a flutter library which simplifies/assists in creating responsive UI in Flutter.
 
 
-- [How to use it.](#how-to-use-it)
+- [Usage](#usage)
  - [Initialize in init]()
  - [parameters]()
 
-## How to use it
+## Usage
 
 - ### Initialize init
-Initialize SizeConfig in init of main.dart.
+Initialize SizeConfig init in main.dart.
 
 ```dart
 SizeConfig().init(context, height, width);
 ```
 
-The parameters are: 
+where: 
 | parameter|description|
 |-----------------------------------|--------------------------------------|
-|context|BuildContext in init of main.dart|
-|height|`height` is the height of the frame in Figma. Which represents total no of pixels|
-|width|`width` is the width of the frame in Figma. Which represents total no of pixels|
+|context  |BuildContext in init of main.dart                                                |
+|height   |`height` is the height of the frame in Figma. Which represents total no of pixels|
+|width    |`width` is the width of the frame in Figma. Which represents total no of pixels  |
 
+- ### get height/width
 
+```dart
+SizeConfig().getMyDynamicHeight(figmaHeight, maxlimit: maxlimit);
+```
+where: 
+| parameter|description|
+|-----------------------------------|--------------------------------------|
+|figmaHeight   |is the height factor according to the device designer in `figma` files|
+|figmaWidth    |is the width factor according to the device designer in `figma` files|
+|maxlimit      |is the maximum value that the variable will be limited to|
+|figmaFontSize |which is the font factor according to the device designer in `figma` files|
 
 ## Features
 
@@ -48,15 +59,6 @@ TODO: List what your package can do. Maybe include images, gifs, or videos.
 
 TODO: List prerequisites and provide or point to information on how to
 start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
-```dart
-const like = 'sample';
-```
 
 ## Additional information
 
