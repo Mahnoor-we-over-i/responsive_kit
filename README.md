@@ -15,22 +15,26 @@ TODO: Put a short description of the package here that helps potential users
 know whether this package might be useful for them. -->
 
 
-Responsive kit is a flutter library which simplifies creating responsive UI in Flutter.
+Responsive kit is a flutter library which simplifies/assists in creating responsive UI in Flutter.
 
--[responsive_kit]()
- - [How to use it.](#how-to-use-it)
-  - [Initialize in init]()
+
+- [How to use it.](#how-to-use-it)
+ - [Initialize in init]()
  - [parameters]()
 
 ## How to use it
 
-### initialze in init
-Initialize SizeConfig in init of main.dart. The parameters needed are: 
-| parameter            | description                     |
+- ### Initialze in init
+Initialize SizeConfig in init of main.dart. The parameters are: 
+| parameter|description|
 |-----------------------------------|--------------------------------------|
 |context|BuildContext in init of main.dart|
-|height|`height` is the height of the frame in Figma|
-|width|`width` is the width of the frame in Figma|
+|height|`height` is the height of the frame in Figma. Which represents total no of pixels|
+|width|`width` is the width of the frame in Figma. Which represents total no of pixels|
+
+```dart
+SizeConfig().init(context, height, width);
+```
 
 
 ## Features
