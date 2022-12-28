@@ -38,9 +38,9 @@ where:
 |height   |`height` is the height of the frame in Figma. Which represents total no of pixels|
 |width    |`width` is the width of the frame in Figma. Which represents total no of pixels  |
 
-- ### get height/width
+- ### get values
 
-These functions return values in `double` for:
+These functions return responsive values according to screensize in `double`.
 - height
 - width
 - font size
@@ -60,7 +60,15 @@ where:
 |maxlimit      |is the maximum value that the variable will be limited to|
 |figmaFontSize |which is the font factor according to the device designer in `figma` files|
 
-## Features
+- ### use in widgets
+
+```dart
+Container(
+    height: SizeConfig().getMyDynamicHeight(200),
+    width: SizeConfig().getMyDynamicWidth(100),
+    color: Colors.amber.shade100;,
+  );
+```
 
 TODO: List what your package can do. Maybe include images, gifs, or videos.
 
