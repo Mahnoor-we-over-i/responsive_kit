@@ -40,11 +40,20 @@ where:
 
 - ### get height/width
 
+These functions return values in `double` for:
+- height
+- width
+- font size
+- bottom margin
+
 ```dart
 SizeConfig().getMyDynamicHeight(figmaHeight, maxlimit: maxlimit);
+SizeConfig().getMyDynamicFontSize(figmaFontSize, maxlimit: maxlimit);
+SizeConfig().getMyDynamicWidth(figmaWidth, maxlimit: maxlimit);
+SizeConfig().getBottomMarginforBigScreens();
 ```
 where: 
-| parameter|description|
+|parameter|description|
 |-----------------------------------|--------------------------------------|
 |figmaHeight   |is the height factor according to the device designer in `figma` files|
 |figmaWidth    |is the width factor according to the device designer in `figma` files|
