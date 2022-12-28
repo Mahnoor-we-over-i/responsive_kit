@@ -1,0 +1,7 @@
+library responsive_kit;
+
+/* 
+Important class to help and support responsiveness in the app,
+it gets width and height by Media Query and then uses it to calculate other important pixels.
+ */
+export 'src/responsive-screen-methods.dart';
