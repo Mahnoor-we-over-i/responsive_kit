@@ -19,8 +19,8 @@ Responsive kit is a flutter library which simplifies/assists in creating respons
 
 
 - [Usage](#usage)
- - [Initialize in init]()
- - [parameters]()
+  - [Initialize in init]()
+  - [parameters]()
 
 ## Usage
 
