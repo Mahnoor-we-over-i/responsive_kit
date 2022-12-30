@@ -38,7 +38,7 @@ where:
 |height   |`height` is the height of the frame in Figma. Which represents total no of pixels|
 |width    |`width` is the width of the frame in Figma. Which represents total no of pixels  |
 
-- ### get values
+- ### Get values
 
 These functions return responsive values according to screensize in `double`.
 - height
@@ -60,15 +60,38 @@ where:
 |maxlimit      |is the maximum value that the variable will be limited to|
 |figmaFontSize |which is the font factor according to the device designer in `figma` files|
 
-- ### use in widgets
+- ### Use in widgets
 
 ```dart
 Container(
     height: SizeConfig().getMyDynamicHeight(200),
     width: SizeConfig().getMyDynamicWidth(100),
     color: Colors.amber.shade100;,
-  );
+  ); 
 ```
+- ### Other Functionalities
+
+
+|parameter|description|
+|-----------------------------------|--------------------------------------|
+|myBlockVertical   |If screen width is divided into `100 pixels` after subtracting horizontal safe area it returns `1 pixel` i.e. 1/100th of screen width |
+|myBlockHorizontal    |If screen height is divided into `100 pixels` it returns `1 pixel` i.e. 1/100th of screen height.|
+|screenHeight      |height of screen using [MediaQuery]|
+|screenWidth |width of screen using [MediaQuery]|
+|statusBarPadding |get **stausBarPadding** using [MediaQuery]|
+
+
+```dart
+  SizeConfig.myBlockVertical;
+  SizeConfig.myBlockHorizontal;
+  SizeConfig.screenHeight;
+  SizeConfig.screenWidth;
+  SizeConfig.statusBarPadding;
+```
+
+
+
+
 
 TODO: List what your package can do. Maybe include images, gifs, or videos.
 

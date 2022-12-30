@@ -23,10 +23,10 @@ class SizeConfig implements ResponsiveScreenMethods {
   /// get **stausBarPadding** using [MediaQuery]
   static late double statusBarPadding;
 
-  /// If screen width is divided into `100 pixels` after subtracting horizontal safe area then this returns `1 pixel` i.e. 1/100th of screen width.
+  /// If screen width is divided into `100 pixels` after subtracting horizontal safe area it returns `1 pixel` i.e. 1/100th of screen width.
   static late double myBlockHorizontal;
 
-  /// If screen height is divided into `100 pixels` then this returns `1 pixel` i.e. 1/100th of screen height.
+  /// If screen height is divided into `100 pixels` it returns `1 pixel` i.e. 1/100th of screen height.
   static late double myBlockVertical;
 
   // _myBaseFont calculated for the particular screen
