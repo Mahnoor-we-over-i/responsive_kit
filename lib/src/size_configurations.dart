@@ -1,7 +1,11 @@
 // responsive kit
+// should we add images init? how to go about it?
+// maybe change names of variables and see what can be done about them?
+// dry run and push it to pub.dev today
+//
 
 import 'package:flutter/material.dart';
-import 'package:responsive_kit/src/responsive-screen-methods.dart';
+import 'package:responsive_kit/src/responsive_screen_methods.dart';
 
 /// Important class to help and support responsiveness in the app,
 /// it gets width and height by Media Query and then uses it to calculate other important pixels.
