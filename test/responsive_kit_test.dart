@@ -4,8 +4,8 @@ import 'package:responsive_kit/src/size_configurations.dart';
 
 void main() {
   Colors.amber.shade100;
-  SizeConfig.myBlockVertical;
-  SizeConfig.myBlockHorizontal;
+  SizeConfig.verticalBlock;
+  SizeConfig.horizontalBlock;
   SizeConfig.screenHeight;
   SizeConfig.screenWidth;
   SizeConfig.statusBarPadding;

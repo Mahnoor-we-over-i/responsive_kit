@@ -7,5 +7,4 @@ abstract class ResponsiveScreenMethods {
   double getMyDynamicFontSize(double figmaFontSize, {double maxlimit});
   double getMyDynamicWidth(double figmaWidth, {double maxlimit});
   double getMyDynamicHeight(double figmaHeight, {double maxlimit});
-  double getBottomMarginforBigScreens({bool isAppBarMargin});
 }
