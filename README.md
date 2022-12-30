@@ -24,7 +24,7 @@ Responsive kit is a flutter library which simplifies/assists in creating respons
 
 ## Usage
 
-- ### Initialize init
+### Initialize init
 Initialize SizeConfig init in main.dart.
 
 ```dart
@@ -38,7 +38,7 @@ where:
 |height   |`height` is the height of the frame in Figma. Which represents total no of pixels|
 |width    |`width` is the width of the frame in Figma. Which represents total no of pixels  |
 
-- ### Get values
+### Get values
 
 These functions return responsive values according to screensize in `double`.
 - height
@@ -60,7 +60,7 @@ where:
 |maxlimit      |is the maximum value that the variable will be limited to|
 |figmaFontSize |which is the font factor according to the device designer in `figma` files|
 
-- ### Use in widgets
+### Use in widgets
 
 ```dart
 Container(
@@ -69,7 +69,7 @@ Container(
     color: Colors.amber.shade100;,
   ); 
 ```
-- ### Other Functionalities
+### Other Functionalities
 
 
 |parameter|description|
