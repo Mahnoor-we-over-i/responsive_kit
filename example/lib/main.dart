@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Responsive Kit: Test Project',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.grey),
+      theme: ThemeData(primarySwatch: Colors.blue),
       home: MyHomePage(title: 'Responsive Kit: Test Project'),
     );
   }
@@ -33,15 +33,22 @@ class _MyHomePageState extends State<MyHomePage> {
   late double tempWidth;
   @override
   Widget build(BuildContext context) {
-    SizeConfig().init(context, 667, 375);
+    SizeConfig().init(context, MediaQuery.of(context).size.height,
+        MediaQuery.of(context).size.width);
 
     /* tempHeight = SizeConfig.screenHeight * 0.1 * (sliderValue);
     tempWidth = SizeConfig.screenWidth * 0.1 * (sliderValue); */
 
-    tempHeight = SizeConfig().getMyDynamicHeight(550) * 0.1 * (sliderValue);
-    tempWidth = SizeConfig().getMyDynamicWidth(250) * 0.1 * (sliderValue);
-    print('height :  $tempHeight');
-    print('width :  $tempWidth');
+    tempHeight =
+        SizeConfig().getMyDynamicHeight(MediaQuery.of(context).size.height) *
+            0.1 *
+            (sliderValue);
+    tempWidth =
+        SizeConfig().getMyDynamicWidth(MediaQuery.of(context).size.width) *
+            0.1 *
+            (sliderValue);
+    /* print('height :  $tempHeight');
+    print('width :  $tempWidth'); */
 
     return Scaffold(
       appBar: AppBar(
@@ -55,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
             alignment: AlignmentDirectional.center,
             children: [
               SizedBox(
-                height: SizeConfig.screenHeight * 0.7,
+                height: SizeConfig.screenHeight * 0.8,
               ),
               Container(
                 height: tempHeight,
@@ -66,9 +73,15 @@ class _MyHomePageState extends State<MyHomePage> {
                     horizontal: SizeConfig().getMyDynamicWidth(20),
                     vertical: SizeConfig().getMyDynamicHeight(20),
                   ),
-                  /* height: SizeConfig().getMyDynamicHeight(50),
-                  width: SizeConfig().getMyDynamicWidth(50), */
-                  color: Colors.amber,
+                  color: Colors.blue.shade400,
+                  child: Container(
+                    margin: EdgeInsets.symmetric(
+                      horizontal: SizeConfig().getMyDynamicWidth(30),
+                      vertical: SizeConfig().getMyDynamicHeight(30),
+                    ),
+                    decoration: BoxDecoration(
+                        color: Colors.white, shape: BoxShape.circle),
+                  ),
                 ),
               ),
             ],
