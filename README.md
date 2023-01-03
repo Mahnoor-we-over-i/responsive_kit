@@ -15,13 +15,15 @@ TODO: Put a short description of the package here that helps potential users
 know whether this package might be useful for them. -->
 
 
-Responsive kit is a flutter library which simplifies/assists in creating responsive UI in Flutter.
+Responsive kit is a flutter library which simplifies/assists in creating responsive UI in Flutter. Designs on specific screen sizes can be converted using functions to become responsive in different screen sizes.  
 
 
 https://user-images.githubusercontent.com/96611704/210403541-85f8d7fe-f759-4ae5-bd0f-fe6f7fb53f05.mp4
 
+As shown in the screen, margin around blue square and circle are constant. These widgets are responsive according to the black rectangle.
+<!-- https://github.com/Mahnoor-we-over-i/responsive_kit/blob/master/assets/responsive_kit_test.mp4 -->
 
-https://github.com/Mahnoor-we-over-i/responsive_kit/blob/master/assets/responsive_kit_test.mp4
+
 
 - [Usage](#usage)
   - [Initialize in init](#initialize-init)
