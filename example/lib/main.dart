@@ -79,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       horizontal: SizeConfig().getMyDynamicWidth(30),
                       vertical: SizeConfig().getMyDynamicHeight(30),
                     ),
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                         color: Colors.white, shape: BoxShape.circle),
                   ),
                 ),
