@@ -17,6 +17,7 @@ know whether this package might be useful for them. -->
 
 Responsive kit is a flutter library which simplifies/assists in creating responsive UI in Flutter.
 
+<img src= "lib\assets\responsive_kit_test.mp4">
 
 - [Usage](#usage)
   - [Initialize in init](#initialize-init)
