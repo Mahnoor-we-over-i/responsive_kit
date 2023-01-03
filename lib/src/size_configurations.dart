@@ -40,9 +40,9 @@ class SizeConfig implements ResponsiveScreenMethods {
   /// get root context of application
   static late BuildContext _rootPageContext;
 
-  late double _screenHeightInDesignFile;
-  late double _screenWidthInDesignFile;
-  late double _fontRatio;
+  static late double _screenHeightInDesignFile;
+  static late double _screenWidthInDesignFile;
+  static late double _fontRatio;
 
   // assert in documentation on pub.dev to call this in main to give root context and then move forward.
 
@@ -64,16 +64,16 @@ class SizeConfig implements ResponsiveScreenMethods {
         _mediaQueryData.padding.left + _mediaQueryData.padding.right;
     _safeAreaVertical =
         _mediaQueryData.padding.top + _mediaQueryData.padding.bottom;
-    _myBaseFont = (screenHeight + AppBar().preferredSize.height) / screenWidth;
+    screenHeight = _mediaQueryData.size.height - AppBar().preferredSize.height;
 
     screenWidth = _mediaQueryData.size.width;
-    screenHeight = _mediaQueryData.size.height - AppBar().preferredSize.height;
+    _myBaseFont = (screenHeight + AppBar().preferredSize.height) / screenWidth;
+
     horizontalBlock = (screenWidth - _safeAreaHorizontal) / 100;
     verticalBlock = (screenHeight + AppBar().preferredSize.height) / 100;
     statusBarPadding = _mediaQueryData.padding.top;
   }
 
-  @override
   @override
 
   /// This function [getMyDynamicFontSize] returns dynamic font size according to the given font size in Design File. It takes:

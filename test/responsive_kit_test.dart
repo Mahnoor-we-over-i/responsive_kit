@@ -1,6 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:responsive_kit/src/size_configurations.dart';
+import 'package:responsive_kit/responsive_kit.dart';
+// import 'package:responsive_kit/src/size_configurations.dart';
 
 void main() {
   Colors.amber.shade100;
@@ -9,4 +9,5 @@ void main() {
   SizeConfig.screenHeight;
   SizeConfig.screenWidth;
   SizeConfig.statusBarPadding;
+  
 }
