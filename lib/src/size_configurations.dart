@@ -15,9 +15,6 @@ class SizeConfig implements ResponsiveScreenMethods {
   // padding on both side (left-right) for safe area. notches and iPhoneX and above
   static late double _safeAreaHorizontal;
 
-  // padding on both (top-bottom) for safe area vertically.
-  static late double _safeAreaVertical;
-
   /// width of screen using [MediaQuery]
   static late double screenWidth;
 
@@ -62,8 +59,7 @@ class SizeConfig implements ResponsiveScreenMethods {
     _mediaQueryData = MediaQuery.of(_rootPageContext);
     _safeAreaHorizontal =
         _mediaQueryData.padding.left + _mediaQueryData.padding.right;
-    _safeAreaVertical =
-        _mediaQueryData.padding.top + _mediaQueryData.padding.bottom;
+
     screenHeight = _mediaQueryData.size.height - AppBar().preferredSize.height;
 
     screenWidth = _mediaQueryData.size.width;

@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:responsive_kit/responsive_kit.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  MyApp({Key? key}) : super(key: key);
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,13 +14,13 @@ class MyApp extends StatelessWidget {
       title: 'Responsive Kit: Test Project',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: MyHomePage(title: 'Responsive Kit: Test Project'),
+      home: const MyHomePage(title: 'Responsive Kit: Test Project'),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key? key, required this.title}) : super(key: key);
+  const MyHomePage({Key? key, required this.title}) : super(key: key);
   final String title;
 
   @override
@@ -28,17 +28,18 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  // controls the value of the outer black box and values of inner container/circle are dependent on it
   double sliderValue = 1.0;
+  // dimensions of black screen
   late double tempHeight;
   late double tempWidth;
+
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context, MediaQuery.of(context).size.height,
         MediaQuery.of(context).size.width);
 
-    /* tempHeight = SizeConfig.screenHeight * 0.1 * (sliderValue);
-    tempWidth = SizeConfig.screenWidth * 0.1 * (sliderValue); */
-
+    // pick up the dimensions of the device for the sake of example project
     tempHeight =
         SizeConfig().getMyDynamicHeight(MediaQuery.of(context).size.height) *
             0.1 *
@@ -47,8 +48,6 @@ class _MyHomePageState extends State<MyHomePage> {
         SizeConfig().getMyDynamicWidth(MediaQuery.of(context).size.width) *
             0.1 *
             (sliderValue);
-    /* print('height :  $tempHeight');
-    print('width :  $tempWidth'); */
 
     return Scaffold(
       appBar: AppBar(

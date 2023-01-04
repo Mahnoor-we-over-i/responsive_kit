@@ -1,9 +1,4 @@
-## 0.0.1 
-
-* TODO: Describe initial release.
-
-## [version] - Date
-* explanations about changes.
-
-## [0.0.1] - 2022-12-22
+## [0.0.1] - 2023-1-3
 * Responsive kit is a flutter library which simplifies/assists in creating responsive UI in Flutter.
+## [0.0.2] - 2023-1-4
+* Removed unused static variable. Minor fixes in READmE.md & main.dart
