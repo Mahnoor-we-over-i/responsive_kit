@@ -2,7 +2,7 @@ Responsive kit is a flutter library which simplifies/assists in creating respons
 
 <!-- https://user-images.githubusercontent.com/96611704/210403541-85f8d7fe-f759-4ae5-bd0f-fe6f7fb53f05.mp4  -->
 ![responsive_kit_test_2](https://user-images.githubusercontent.com/96611704/210519814-288c09e6-76de-4637-84bd-baa41f009339.gif)
-<img src="https://user-images.githubusercontent.com/96611704/210519814-288c09e6-76de-4637-84bd-baa41f009339.gif" width="40" height="40" />
+<img src="https://user-images.githubusercontent.com/96611704/210519814-288c09e6-76de-4637-84bd-baa41f009339.gif" width="300" height="650" />
 
 As shown in the screen, margin around blue square and circle are constant. These widgets are responsive according to the black rectangle.
 
