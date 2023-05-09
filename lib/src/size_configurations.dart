@@ -9,7 +9,7 @@ import 'package:responsive_kit/src/responsive_screen_methods.dart';
 
 /// Important class to help and support responsiveness in the app,
 /// it gets width and height by Media Query and then uses it to calculate other important pixels.
-class SizeConfig implements ResponsiveScreenMethods {
+class SizeConfig /* implements ResponsiveScreenMethods  */ {
   // initializer
   static late MediaQueryData _mediaQueryData;
   // padding on both side (left-right) for safe area. notches and iPhoneX and above
@@ -77,7 +77,8 @@ class SizeConfig implements ResponsiveScreenMethods {
   /// `fontSizeInDesignFile` which is the font factor according to the device designer in `Design` files
   ///
   /// `maxlimit` is the maximum size of font that the it will be limited to
-  double getMyDynamicFontSize(double fontSizeInDesignFile, {double? maxlimit}) {
+  static double getMyDynamicFontSize(double fontSizeInDesignFile,
+      {double? maxlimit}) {
     // _fontRatio is the ratio of height to width of the frame
 
     double calculatedValue = fontSizeInDesignFile / _fontRatio;
@@ -98,7 +99,8 @@ class SizeConfig implements ResponsiveScreenMethods {
   ///
   /// `maxlimit` is the maximum height that it will be limited to
 
-  double getMyDynamicHeight(double heightInDesignFile, {double? maxlimit}) {
+  static double getMyDynamicHeight(double heightInDesignFile,
+      {double? maxlimit}) {
     // _screenHeightInDesignFile is the maximum height of screen/frame in Design files
     double calculatedValue = heightInDesignFile / _screenHeightInDesignFile;
     double returnSize = SizeConfig.verticalBlock * calculatedValue;
@@ -117,7 +119,8 @@ class SizeConfig implements ResponsiveScreenMethods {
   ///
   /// `maxlimit` is the maximum width that it will be limited to
 
-  double getMyDynamicWidth(double widthInDesignFile, {double? maxlimit}) {
+  static double getMyDynamicWidth(double widthInDesignFile,
+      {double? maxlimit}) {
     // _screenWidthInDesignFile is the maximum width of screen/frame in Design files
     double calculatedValue = widthInDesignFile / _screenWidthInDesignFile;
     double returnSize = SizeConfig.horizontalBlock * calculatedValue;

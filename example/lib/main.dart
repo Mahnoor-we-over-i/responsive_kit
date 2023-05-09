@@ -41,11 +41,11 @@ class _MyHomePageState extends State<MyHomePage> {
 
     // pick up the dimensions of the device for the sake of example project
     tempHeight =
-        SizeConfig().getMyDynamicHeight(MediaQuery.of(context).size.height) *
+        SizeConfig.getMyDynamicHeight(MediaQuery.of(context).size.height) *
             0.1 *
             (sliderValue);
     tempWidth =
-        SizeConfig().getMyDynamicWidth(MediaQuery.of(context).size.width) *
+        SizeConfig.getMyDynamicWidth(MediaQuery.of(context).size.width) *
             0.1 *
             (sliderValue);
 
@@ -69,14 +69,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 color: Colors.black38,
                 child: Container(
                   margin: EdgeInsets.symmetric(
-                    horizontal: SizeConfig().getMyDynamicWidth(20),
-                    vertical: SizeConfig().getMyDynamicHeight(20),
+                    horizontal: SizeConfig.getMyDynamicWidth(20),
+                    vertical: SizeConfig.getMyDynamicHeight(20),
                   ),
                   color: Colors.blue.shade400,
                   child: Container(
                     margin: EdgeInsets.symmetric(
-                      horizontal: SizeConfig().getMyDynamicWidth(30),
-                      vertical: SizeConfig().getMyDynamicHeight(30),
+                      horizontal: SizeConfig.getMyDynamicWidth(30),
+                      vertical: SizeConfig.getMyDynamicHeight(30),
                     ),
                     decoration: const BoxDecoration(
                         color: Colors.white, shape: BoxShape.circle),
